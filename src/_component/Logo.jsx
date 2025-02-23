@@ -7,8 +7,8 @@ export default function Logo() {
                 <Scale />
             </div>
             <div>
-                <a className=" text-gray-300 text-2xl font-(--font-montserrat) justify-center items-center flex p-5 " href="/">
-                    ADVOCACIA
+                <a className=" text-gray-300 text-2xl font-cinzel justify-center items-center flex p-5" href="/">
+                    Advocacia
                 </a>
             </div>
         </div>

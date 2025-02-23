@@ -1,4 +1,6 @@
+import Banner from './_component/Banner'
 import Logo from './_component/Logo'
+import Menu from './_component/Menu'
 import './App.css'
 
 
@@ -8,15 +10,11 @@ function App() {
       <div className="w-full h-screen flex flex-col bg-slate-800">
         <div className=" w-full h-14 flex justify-center">
           <div className=" w-7xl  flex justify-between">
-
             <Logo />
-            <div className=" flex p-2 justify-center items-center">
-              <a className=" text-gray-300 text-2xl font-(--font-montserrat) justify-center items-center flex p-5 " href="/">
-                HOME ABAOUT SERVICE SUCCESS STORY PRICING CONTACT
-              </a>
-            </div>
+            <Menu />
           </div>
         </div>
+        <Banner />
         <div className=' p-2 space-y-3 mt-2'>
           <p className='text-3xl text-blue-50 p-4 font-lato'> Advocacia is set to become a leading law firm, delivering
             excellence and integrity in every case. With a team of experienced
