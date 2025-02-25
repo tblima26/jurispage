@@ -1,4 +1,5 @@
 import { Scale } from "lucide-react"
+import React from "react"
 
 export default function Logo() {
     return (
@@ -8,7 +9,7 @@ export default function Logo() {
             </div>
             <div>
                 <a className=" text-gray-300 text-2xl font-cinzel justify-center items-center flex p-5" href="/">
-                    Advocacia
+                    Advocacy
                 </a>
             </div>
         </div>

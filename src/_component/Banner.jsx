@@ -8,15 +8,15 @@ export default function Banner() {
 
             </img>
             <div className=" flex w-7xl h-20 absolute flex-col justify-center items-center gap-3">
-                <div className="text-5xl text-slate-200">
+                <div className="text-6xl text-slate-200 font-bold">
                     The Supreme Legal Advocates
                 </div>
-                <div className="text-3xl text-slate-200">
+                <div className="text-2xl text-slate-200 ">
                     Providing innovative and dedicated legal solutions for your needs.
                 </div>
-                <div className=" justify-center items-center space-x-7">
-                    <button className="bg-red-900 text-xl text-slate-200 p-4 rounded-xl"> Meet Our Team</button>
-                    <button className=" text-xl text-white border-red-900 border-4 p-4 rounded-3xl">Contact Us</button>
+                <div className=" justify-center items-center space-x-7 ">
+                    <button className="text-xl text-white border-red-900 p-4 border-4 bg-red-900  rounded-xl hover:bg-transparent hover:border-red-900 transition-all"> Meet Our Team</button>
+                    <button className="text-xl text-white border-red-900 p-4 border-4  hover:bg-red-900  rounded-xl transition-all">Contact Us</button>
                 </div>
             </div>
         </div>
