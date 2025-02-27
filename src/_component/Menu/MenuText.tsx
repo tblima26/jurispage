@@ -4,7 +4,7 @@ interface MenuTextProps {
   text: string
 }
 
-export default function MenuText({ text }: MenuTextProps) {
+export function MenuText({ text }: MenuTextProps) {
   return (
     <span className="font-montserrat text-sm">
       {text}
