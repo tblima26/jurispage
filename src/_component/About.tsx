@@ -1,5 +1,6 @@
 import { Armchair, Minus } from 'lucide-react'
 import React from 'react'
+import Divider from './Divider'
 
 export default function About() {
   return (
@@ -7,13 +8,9 @@ export default function About() {
       <p className='font-cinzel text-4xl font-bold'>
         About Us
       </p>
-      <div className='flex justify-center items-center '>
-        <Minus className='h-8 w-8' />
-        <Armchair className='h-8 w-8' />
-        <Minus className='h-8 w-8' />
-      </div>
+      <Divider />
       <p className='font-cinzel text-3xl font-bold'>
-        Welcome to Advocay
+        Welcome to Advocacy
       </p>
       <p className='font-montserrat text-base1'>
         At Advocacy, we are dedicated to providing exceptional legal services with a proven track record of success. With over 10 years of experience, our team of expert lawyers is committed to ensuring the best outcomes for our clients. We are proud of our high success rate and the trust our clients place in us to handle their legal matters efficiently.

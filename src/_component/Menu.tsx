@@ -27,7 +27,6 @@ export default function Menu() {
         <MenuIcon icon={UserRoundPen} />
         <MenuText text="Contact" />
       </MenuRoot>
-
     </div>
   )
 }

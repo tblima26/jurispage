@@ -5,6 +5,9 @@ import About from './_component/About'
 import Container from './_component/Container/Container'
 
 import './App.css'
+import Profiles from './_component/Profiles'
+import Services from './_component/Services/Services'
+
 
 
 function App() {
@@ -24,15 +27,13 @@ function App() {
       </div>
       <div className="w-full flex bg-gray-200">
         {/* Cards e About */}
-        <div className="max-w-7xl w-full mx-auto px-6 py-12">
-          <div className="flex justify-center">
-            <Container />
-          </div>
-
+        <div className="max-w-7xl w-full mx-auto px-6 py-12 flex 
+        flex-col items-center gap-y-14">
+          <Container />
           {/* Sobre a empresa */}
-          <div className="mt-12 flex justify-center">
-            <About />
-          </div>
+          <About />
+          <Profiles />
+          <Services />
         </div>
       </div >
     </>

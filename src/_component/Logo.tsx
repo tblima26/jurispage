@@ -1,5 +1,5 @@
-import { Scale } from "lucide-react"
 import React from "react"
+import { Scale } from "lucide-react"
 
 export default function Logo() {
     return (
