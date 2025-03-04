@@ -12,6 +12,7 @@
 - Tecnologias
 - Instalação
 - Uso
+  
 
 ## 🏛️ Sobre
 Este projeto é uma landing page para um escritório de advocacia fictício, desenvolvida com foco em design moderno e responsivo.
@@ -20,17 +21,11 @@ Este projeto é uma landing page para um escritório de advocacia fictício, des
 - **Next.js** – Framework para o frontend
 - **Tailwind CSS** – Estilização rápida e responsiva
 - **Framer Motion** – Animações fluidas
-- 
 
-
-## 🔧 Plugins utilizados
-@vitejs/plugin-react usa Babel para Fast Refresh.
-@vitejs/plugin-react-swc usa SWC para Fast Refresh.
-
-## ⚙️ Instalação  
-Clone o repositório e instale as dependências:  
+## ⚙️ Instalação
+Clone o repositório e instale as dependências:
 ```sh
-git clone https://github.com/seu-usuario/advocacia-landing-page.git  
-cd advocacia-landing-page  
-npm install  
+git clone https://github.com/seu-usuario/advocacia-landing-page.git
+cd advocacia-landing-page
+npm install
 npm run dev
