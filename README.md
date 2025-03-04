@@ -10,8 +10,8 @@
 ## 📌 Índice
 - Sobre
 - Tecnologias
-- Instalação
 - Uso
+- Instalação
   
 
 ## 🏛️ Sobre
@@ -21,6 +21,13 @@ Este projeto é uma landing page para um escritório de advocacia fictício, des
 - **Next.js** – Framework para o frontend
 - **Tailwind CSS** – Estilização rápida e responsiva
 - **Framer Motion** – Animações fluidas
+
+## 💻 Uso
+1. Abra o projeto no seu editor de código preferido.
+2. Rode o comando `npm run dev` para iniciar o servidor de desenvolvimento.
+3. Acesse o aplicativo no seu navegador em [http://localhost:3000](http://localhost:3000).
+
+Caso queira realizar modificações ou adicionar novas funcionalidades, consulte as seções de desenvolvimento e contribuições.
 
 ## ⚙️ Instalação
 Clone o repositório e instale as dependências:
