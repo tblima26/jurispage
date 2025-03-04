@@ -66,7 +66,7 @@ function App() {
       <div className="w-full flex flex-col bg-slate-900 justify-center items-center">
         <div><Carousel /></div>
         <div ref={contactRef}><Contact /></div>
-        <div><Footer /></div>
+        <div><Foote'r /></div>
       </div>
     </>
   );

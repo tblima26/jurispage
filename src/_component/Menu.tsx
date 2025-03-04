@@ -23,7 +23,6 @@ export default function Menu({
 }: MenuProps) {
   return (
     <div className="flex justify-center items-center space-x-4 p-2">
-      {/* Passando o scrollToSection e o ref para o MenuRoot */}
       <MenuRoot scrollToSection={scrollToSection} sectionRef={homeRef}>
         <MenuIcon icon={HouseIcon} />
         <MenuText text="Home" />
