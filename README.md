@@ -22,14 +22,15 @@ Este projeto é uma landing page para um escritório de advocacia fictício, des
 - **Framer Motion** – Animações fluidas
 - 
 
-## ⚙️ Instalação  
-Clone o repositório e instale as dependências:  
-``sh
-git clone https://github.com/seu-usuario/advocacia-landing-page.git  
-cd advocacia-landing-page  
-npm install  
-npm run dev
 
 ## 🔧 Plugins utilizados
 @vitejs/plugin-react usa Babel para Fast Refresh.
 @vitejs/plugin-react-swc usa SWC para Fast Refresh.
+
+## ⚙️ Instalação  
+Clone o repositório e instale as dependências:  
+```sh
+git clone https://github.com/seu-usuario/advocacia-landing-page.git  
+cd advocacia-landing-page  
+npm install  
+npm run dev
