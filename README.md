@@ -24,12 +24,11 @@ Este projeto é uma landing page para um escritório de advocacia fictício, des
 
 ## ⚙️ Instalação  
 Clone o repositório e instale as dependências:  
-```sh
+``sh
 git clone https://github.com/seu-usuario/advocacia-landing-page.git  
 cd advocacia-landing-page  
 npm install  
 npm run dev
-```sh
 
 ## 🔧 Plugins utilizados
 @vitejs/plugin-react usa Babel para Fast Refresh.
