@@ -28,7 +28,7 @@ Clone o repositório e instale as dependências:
 git clone https://github.com/seu-usuario/advocacia-landing-page.git  
 cd advocacia-landing-page  
 npm install  
-npm run dev  
+npm run dev```
 
 ## 🔧 Plugins utilizados
 @vitejs/plugin-react usa Babel para Fast Refresh.
