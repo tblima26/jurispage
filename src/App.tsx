@@ -9,6 +9,10 @@ import Profiles from './_component/Profiles';
 import Services from './_component/Services/Services';
 import { useRef } from "react";
 import './App.css';
+import Pricing from './_component/Pricing';
+import Contact from './_component/Contact/Contact';
+import Carousel from './_component/Carousel/Carousel';
+import Footer from './_component/Footer';
 
 function App() {
   // Definindo os refs para cada seção
@@ -56,8 +60,13 @@ function App() {
           <div ref={aboutRef}><About /></div>
           <Profiles />
           <div ref={storyRef}><Services /></div>
-          <div ref={contactRef}><h1>Contato</h1></div>
+          <div ref={pricingRef}><Pricing /></div>
         </div>
+      </div>
+      <div className="w-full flex flex-col bg-slate-900 justify-center items-center">
+        <div><Carousel /></div>
+        <div ref={contactRef}><Contact /></div>
+        <div><Footer /></div>
       </div>
     </>
   );
