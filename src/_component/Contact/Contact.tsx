@@ -7,8 +7,8 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { XIcon } from 'lucide-react'
 
 const clientSchema = z.object({
-    name: z.string().min(4, "Minimum of 4 characters."),
-    email: z.string().email("Invalid email."),
+    name: z.string().min(4, "Minimum of 4 characters.").nonempty("Name cannot be empty."),
+    email: z.string().email("Invalid email.").nonempty("Email cannot be empty."),
 })
 
 type ClientSchema = z.infer<typeof clientSchema>
