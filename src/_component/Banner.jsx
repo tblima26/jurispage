@@ -7,7 +7,7 @@ export default function Banner() {
             <img src={banner} alt="Banner" className="w-full brightness-50  object-cover h-screen">
 
             </img>
-            <div className=" flex w-7xl h-20 absolute flex-col justify-center items-center gap-3">
+            <div className=" flex flex-col w-7xl h-20 absolute  justify-center items-center gap-3">
                 <div className="text-6xl text-slate-200 font-bold">
                     The Supreme Legal Advocates
                 </div>

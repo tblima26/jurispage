@@ -23,9 +23,11 @@ function App() {
   const contactRef = useRef<HTMLDivElement | null>(null);
 
   // Função para rolar até a seção
-  const scrollToSection = (ref) => {
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     ref.current?.scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
+      block: 'center',
+      inline: 'center'
     })
   }
 
@@ -54,11 +56,9 @@ function App() {
       </div>
       <div className="w-full flex bg-gray-200">
         {/* Cards e About */}
-        <div className="max-w-7xl w-full mx-auto px-6 py-12 flex flex-col items-center gap-y-10">
+        <div className="max-w-7xl w-full mx-auto px-6 py-12 flex flex-col items-center">
           <Container />
-          {/* Seções */}
           <div ref={aboutRef}><About /></div>
-          <Profiles />
           <div ref={storyRef}><Services /></div>
           <div ref={pricingRef}><Pricing /></div>
         </div>
@@ -66,7 +66,9 @@ function App() {
       <div className="w-full flex flex-col bg-slate-900 justify-center items-center">
         <div><Carousel /></div>
         <div ref={contactRef}><Contact /></div>
-        <div><Foote'r /></div>
+      </div>
+      <div className="w-full flex flex-col bg-neutral-900 justify-center items-center h-90">
+        <div><Footer /></div>
       </div>
     </>
   );
