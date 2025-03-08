@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 
-import { XIcon } from 'lucide-react'
+import { Loader2, XIcon } from 'lucide-react'
 
 const clientSchema = z.object({
     name: z.string().min(4, "Minimum of 4 characters.").nonempty("Name cannot be empty."),
@@ -14,15 +14,17 @@ const clientSchema = z.object({
 type ClientSchema = z.infer<typeof clientSchema>
 
 export default function Contact() {
-    const { register, handleSubmit, formState: { errors }, reset } = useForm<ClientSchema>({
+    const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm<ClientSchema>({
         resolver: zodResolver(clientSchema)
     })
 
-    function handleSubmitMessage(data: ClientSchema) {
+    async function handleSubmitMessage(data: ClientSchema) {
         const { email, name } = data
         const cellphone = "5561981797054"
         const message = `"Hello, my name is ${name} and my email is ${email}. I would like more information."`
         const whatsappUrl = `https://wa.me/${cellphone}?text=${message}`
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
         window.open(whatsappUrl, "_blank")
         reset()
     }
@@ -74,9 +76,20 @@ export default function Contact() {
                         {!errors.email && <span></span>} {/* Espaço reservado */}
                     </div>
 
-                    <button type="submit" className="w-full p-2 bg-green-700 hover:bg-green-600 text-white rounded mt-4 transition-all">
-                        Enviar
+                    <button
+                        type="submit"
+                        className={`w-full p-2 text-white rounded mt-4 transition-all flex items-center justify-center gap-2 duration-500 
+                            ${isSubmitting ? 'bg-gray-500 hover:bg-gray-500 cursor-not-allowed' : 'bg-green-700 hover:bg-green-600'}`}
+                        disabled={isSubmitting}
+                    >
+                        {isSubmitting ? (
+                            <>
+                                Loading...
+                                <Loader2 className="w-5 h-5 animate-spin" />
+                            </>
+                        ) : "Send"}
                     </button>
+
                 </form>
             </div>
         </div>
